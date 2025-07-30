@@ -1403,20 +1403,8 @@ body {
 /* Contact Section */
 .contact-section {
     padding: 5rem 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #667eea;
     position: relative;
-    overflow: hidden;
-}
-
-.contact-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.1);
-    z-index: 1;
 }
 
 .contact-section .container {
@@ -1456,6 +1444,9 @@ body {
     border-radius: 20px;
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-info h3 {
@@ -1477,6 +1468,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    flex-grow: 1;
 }
 
 .contact-item {
@@ -1511,7 +1503,9 @@ body {
     border-radius: 20px;
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-group {
@@ -1550,7 +1544,8 @@ body {
 .form-buttons {
     display: flex;
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin-top: auto;
+    padding-top: 2rem;
 }
 
 .submit-btn,
