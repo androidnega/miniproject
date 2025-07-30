@@ -379,21 +379,28 @@ body {
 
 .slide-caption {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.95) 100%);
-    backdrop-filter: blur(15px);
+    bottom: 2rem;
+    left: 2rem;
+    right: 2rem;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(20px);
     color: #ffffff;
-    padding: 3rem 2rem 2rem;
+    padding: 2rem;
     font-size: 1.1rem;
     font-weight: 600;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
     letter-spacing: 0.5px;
     text-align: center;
-    border-top: 2px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
     z-index: 2;
+    transform: translateY(100%);
+    transition: all 0.6s ease;
+}
+
+.slide.active .slide-caption {
+    transform: translateY(0);
 }
 
 
@@ -1832,23 +1839,29 @@ body {
     }
     
     .slide-caption {
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0.95) 100%);
-        color: white;
-        padding: 2.5rem 2rem 2rem;
-        font-size: 1.2rem;
-        border-radius: 0;
-        backdrop-filter: blur(20px);
         position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        text-align: center;
+        bottom: 2rem;
+        left: 2rem;
+        right: 2rem;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(15px);
+        color: white;
+        padding: 1.5rem 2rem;
+        font-size: 1.1rem;
+        border-radius: 12px;
         font-weight: 600;
-        letter-spacing: 0.8px;
-        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
-        border-top: 2px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+        letter-spacing: 0.6px;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
         z-index: 3;
+        text-align: center;
+        transform: translateY(100%);
+        transition: all 0.5s ease;
+    }
+    
+    .slide.active .slide-caption {
+        transform: translateY(0);
     }
     
     .about-excerpt {
