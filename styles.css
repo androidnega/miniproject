@@ -1906,7 +1906,10 @@ body {
     }
     
     .home-section {
-        padding: 80px 0 40px;
+        padding: 0;
+        min-height: auto;
+        display: block;
+        background: #ffffff;
     }
     
     .about-section {
@@ -1997,7 +2000,10 @@ body {
     }
     
     .home-section {
-        padding: 70px 0 30px;
+        padding: 0;
+        min-height: auto;
+        display: block;
+        background: #ffffff;
     }
     
     .hero-container {
