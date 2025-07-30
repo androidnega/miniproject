@@ -1184,8 +1184,8 @@ body {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
 }
 
 .gallery-item {
@@ -1255,7 +1255,7 @@ body {
 
 .documents-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
 
@@ -1622,7 +1622,7 @@ body {
     }
     
     .documents-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
     
@@ -1638,8 +1638,8 @@ body {
     }
     
     .gallery-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
     
     .contact-content {
@@ -1762,7 +1762,9 @@ body {
     /* Mobile Single Column Layouts */
     .courses-grid,
     .testimonials-grid,
-    .references-grid {
+    .references-grid,
+    .documents-grid,
+    .gallery-grid {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
