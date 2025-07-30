@@ -1809,6 +1809,7 @@ body {
     .slider {
         height: 100%;
         border-radius: 0;
+        touch-action: pan-y;
     }
     
     .slide {
