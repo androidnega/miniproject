@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Your Name - TTU Student</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>YN</h2> <!-- Replace YN with your initials -->
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#references" class="nav-link">References</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#documents" class="nav-link">Documents</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <!-- Hero Container with 2-column layout -->
+        <div class="hero-container">
+            <!-- Left Column: Image Slider -->
+            <div class="hero-left">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide active">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&h=400&fit=crop" alt="Academic Activity">
+                            <div class="slide-caption">Engaging in Academic Excellence at TTU</div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&h=400&fit=crop" alt="Community Service">
+                            <div class="slide-caption">Community Service Initiative</div>
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=400&fit=crop" alt="School Project">
+                            <div class="slide-caption">Leading Tech Projects at University</div>
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <button class="nav-btn active" onclick="showSlide(0)"></button>
+                        <button class="nav-btn" onclick="showSlide(1)"></button>
+                        <button class="nav-btn" onclick="showSlide(2)"></button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column: Combined About Section -->
+            <div class="hero-right">
+                <div class="about-excerpt">
+                    <h1 class="section-main-title">About Me</h1>
+                    
+                    <div class="profile-info">
+                        <p class="profile-text">
+                            <span class="student-details">Student ID: BC-ITS-24-047 | Bachelor of Information Technology</span><br>
+                            <span class="department">Computer Science Department, Takoradi Technical University</span>
+                        </p>
+                        
+                        <p class="about-description">
+                            
+                           I am <strong>Emmanuel Kofi Kwofie</strong>, a dedicated Computer Science student at TTU, passionate about software development and innovative technology solutions. My goal is to become a skilled software engineer contributing to impactful projects in the tech industry.
+                        </p>
+                        
+                        <a href="#about" class="read-more-btn">Read More About Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Current Courses -->
+        <div class="current-courses">
+            <h3>Current Semester Courses</h3>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=200&fit=crop" alt="Programming Using C++">
+                    <h4>Programming Using C++</h4>
+                    <p>Object-oriented programming concepts and C++ language fundamentals.</p>
+                </div>
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=200&fit=crop" alt="Database Structure">
+                    <h4>Database Structure</h4>
+                    <p>Database design, normalization, and data management principles.</p>
+                </div>
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=400&h=200&fit=crop" alt="Computer Hardware">
+                    <h4>Computer Hardware</h4>
+                    <p>Computer components, architecture, and hardware troubleshooting.</p>
+                </div>
+
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=200&fit=crop" alt="Accounting 2">
+                    <h4>Accounting 2</h4>
+                    <p>Financial accounting principles and business finance management.</p>
+                </div>
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=200&fit=crop" alt="Digital Electronics">
+                    <h4>Digital Electronics</h4>
+                    <p>Digital circuits, logic gates, and electronic system design.</p>
+                </div>
+                <div class="course-card">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=200&fit=crop" alt="Webtech">
+                    <h4>Webtech</h4>
+                    <p>Web development technologies, HTML, CSS, and JavaScript programming.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calendar Preview -->
+        <div class="calendar-preview">
+            <div class="calendar-content">
+                <h3>Upcoming Activities</h3>
+                <div class="calendar-grid">
+                    <div class="calendar-item">
+                        <div class="date">Sep 15</div>
+                        <div class="activity">Mini Project Submission</div>
+                    </div>
+                    <div class="calendar-item">
+                        <div class="date">Oct 02</div>
+                        <div class="activity">Mid-Semester Exams</div>
+                    </div>
+                    <div class="calendar-item">
+                        <div class="date">Nov 10</div>
+                        <div class="activity">Internship Applications</div>
+                    </div>
+                    <div class="calendar-item">
+                        <div class="date">Dec 05</div>
+                        <div class="activity">Final Project Defense</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="testimonials">
+            <h3>Testimonials</h3>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Exceptional student with outstanding dedication and technical proficiency."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&crop=face" alt="Dr. Johnson">
+                            <div>
+                                <h4>Dr. Emmanuel Johnson</h4>
+                                <span>Senior Lecturer, CS Dept.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Excellent teamwork and consistent delivery of high-quality work."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616c90a1acd?w=120&h=120&fit=crop&crop=face" alt="Ms. Comfort">
+                            <div>
+                                <h4>Ms. Comfort Asante</h4>
+                                <span>IT Supervisor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Natural leader with commitment to excellence and community service."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&h=120&fit=crop&crop=face" alt="Samuel">
+                            <div>
+                                <h4>Samuel Mensah</h4>
+                                <span>Class Representative</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            
+            <!-- Educational Qualifications -->
+            <div class="about-subsection">
+                <h3>Educational Qualifications</h3>
+                <div class="education-timeline">
+                    <div class="timeline-item">
+                        <div class="year">2025</div>
+                        <div class="content">
+                            <h4>Bachelor of Information Technology</h4>
+                            <p>Takoradi Technical University - Expected Graduation</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2020</div>
+                        <div class="content">
+                            <h4>West African Senior School Certificate</h4>
+                            <p>Your High School Name - Science Programme</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2017</div>
+                        <div class="content">
+                            <h4>Basic Education Certificate</h4>
+                            <p>Your Junior High School Name</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2014</div>
+                        <div class="content">
+                            <h4>Primary School Certificate</h4>
+                            <p>Your Primary School Name</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">2008</div>
+                        <div class="content">
+                            <h4>Kindergarten</h4>
+                            <p>Your Kindergarten/Crèche Name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work Experience -->
+            <div class="about-subsection">
+                <h3>Work Experience & Internships</h3>
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <h4>IT Support Intern</h4>
+                        <p class="company">TechSolutions Ghana Ltd.</p>
+                        <p class="period">June 2024 - August 2024</p>
+                        <p class="description">Provided technical support and maintained computer systems for employees.</p>
+                    </div>
+                    <div class="experience-card">
+                        <h4>Web Development Intern</h4>
+                        <p class="company">Digital Marketing Agency</p>
+                        <p class="period">June 2023 - August 2023</p>
+                        <p class="description">Developed responsive websites and collaborated on UI/UX improvements.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seminars and Conferences -->
+            <div class="about-subsection">
+                <h3>Seminars & Conferences Attended</h3>
+                <div class="conferences-grid">
+                    <div class="conference-item">
+                        <h4>Ghana Tech Summit 2024</h4>
+                        <p class="location">Accra International Conference Centre</p>
+                        <p class="duration">3 Days - March 2024</p>
+                        <p class="type">Technology Conference</p>
+                    </div>
+                    <div class="conference-item">
+                        <h4>West Africa Developers Conference</h4>
+                        <p class="location">Kumasi, Ghana</p>
+                        <p class="duration">2 Days - September 2023</p>
+                        <p class="type">Software Development Conference</p>
+                    </div>
+                    <div class="conference-item">
+                        <h4>Cybersecurity Workshop</h4>
+                        <p class="location">University of Ghana, Legon</p>
+                        <p class="duration">1 Day - November 2023</p>
+                        <p class="type">Technical Workshop</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leadership Positions -->
+            <div class="about-subsection">
+                <h3>Leadership Positions</h3>
+                <div class="leadership-grid">
+                    <div class="leadership-item">
+                        <h4>Student Representative Council</h4>
+                        <p class="position">IT Representative</p>
+                        <p class="organization">TTU Student Parliament</p>
+                        <p class="period">2023 - 2024</p>
+                    </div>
+                    <div class="leadership-item">
+                        <h4>Programming Club</h4>
+                        <p class="position">Vice President</p>
+                        <p class="organization">TTU Computer Science Club</p>
+                        <p class="period">2022 - 2023</p>
+                    </div>
+                    <div class="leadership-item">
+                        <h4>Community Outreach</h4>
+                        <p class="position">Team Lead</p>
+                        <p class="organization">TTU Volunteer Group</p>
+                        <p class="period">2022 - Present</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Community Service -->
+            <div class="about-subsection">
+                <h3>Community & Voluntary Service</h3>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h4>Digital Literacy Training</h4>
+                        <p>Teaching basic computer skills to elderly community members at Takoradi Community Center</p>
+                        <span class="service-period">2023 - Present</span>
+                    </div>
+                    <div class="service-item">
+                        <h4>Environmental Clean-Up</h4>
+                        <p>Organizing monthly beach cleaning activities along Takoradi shores</p>
+                        <span class="service-period">2022 - Present</span>
+                    </div>
+                    <div class="service-item">
+                        <h4>Youth Mentorship</h4>
+                        <p>Mentoring high school students in STEM subjects and career guidance</p>
+                        <span class="service-period">2023 - Present</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hobbies and Interests -->
+            <div class="about-subsection">
+                <h3>Hobbies, Interests & Personal Aspirations</h3>
+                <div class="interests-container">
+                    <div class="interests-grid">
+                        <div class="interest-card">
+                            <h4>🎮 Technology & Gaming</h4>
+                            <p>Passionate about emerging technologies, game development, and exploring new programming languages</p>
+                        </div>
+                        <div class="interest-card">
+                            <h4>📚 Continuous Learning</h4>
+                            <p>Avid reader of tech blogs, online courses enthusiast, and always seeking new knowledge</p>
+                        </div>
+                        <div class="interest-card">
+                            <h4>🏃‍♂️ Sports & Fitness</h4>
+                            <p>Regular jogger, football player, and believer in maintaining work-life balance</p>
+                        </div>
+                        <div class="interest-card">
+                            <h4>🎵 Music & Arts</h4>
+                            <p>Enjoy listening to various music genres and appreciate creative digital arts</p>
+                        </div>
+                    </div>
+                    <div class="aspirations">
+                        <h4>Personal Aspirations</h4>
+                        <ul>
+                            <li>Become a lead software engineer at a top-tier technology company</li>
+                            <li>Contribute to open-source projects that benefit the African tech ecosystem</li>
+                            <li>Establish a tech startup focused on solving local community problems</li>
+                            <li>Mentor the next generation of Ghanaian software developers</li>
+                            <li>Pursue advanced certifications in cloud computing and AI technologies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references" class="references-section">
+        <div class="container">
+            <h2 class="section-title">References</h2>
+            <div class="references-grid">
+                <div class="reference-card">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=120&h=120&fit=crop&crop=face" alt="Dr. Kwame Asante">
+                    <h3>Dr. Kwame Asante</h3>
+                    <p class="position">Head of Department</p>
+                    <p class="organization">Computer Science Department, TTU</p>
+                    <div class="contact-info">
+                        <p>📧 kwame.asante@ttu.edu.gh</p>
+                        <p>📱 +233 24 123 4567</p>
+                        <p>🏢 TTU Main Campus, Block A</p>
+                    </div>
+                </div>
+                <div class="reference-card">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&h=120&fit=crop&crop=face" alt="Mrs. Grace Osei">
+                    <h3>Mrs. Grace Osei</h3>
+                    <p class="position">Senior Software Engineer</p>
+                    <p class="organization">TechSolutions Ghana Ltd.</p>
+                    <div class="contact-info">
+                        <p>📧 grace.osei@techsolutions.com.gh</p>
+                        <p>📱 +233 26 789 0123</p>
+                        <p>🏢 East Legon, Accra</p>
+                    </div>
+                </div>
+                <div class="reference-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&h=120&fit=crop&crop=face" alt="Mr. Samuel Boateng">
+                    <h3>Mr. Samuel Boateng</h3>
+                    <p class="position">IT Manager</p>
+                    <p class="organization">Digital Marketing Agency</p>
+                    <div class="contact-info">
+                        <p>📧 samuel.boateng@dma.com.gh</p>
+                        <p>📱 +233 20 456 7890</p>
+                        <p>🏢 Spintex Road, Accra</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Photo Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=400&fit=crop" alt="Graduation Ceremony">
+                    <div class="gallery-overlay">
+                        <h4>University Graduation Day</h4>
+                        <p>Celebrating academic achievements with family</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=400&fit=crop" alt="Project Presentation">
+                    <div class="gallery-overlay">
+                        <h4>Final Year Project Presentation</h4>
+                        <p>Presenting my capstone project to faculty members</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=400&fit=crop" alt="Team Building">
+                    <div class="gallery-overlay">
+                        <h4>Team Building Activity</h4>
+                        <p>Building bonds with fellow computer science students</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=400&fit=crop" alt="Internship">
+                    <div class="gallery-overlay">
+                        <h4>Internship Experience</h4>
+                        <p>Working on real-world projects during summer internship</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=400&fit=crop" alt="Community Service">
+                    <div class="gallery-overlay">
+                        <h4>Community Tech Training</h4>
+                        <p>Teaching digital literacy to community members</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=400&fit=crop" alt="Conference">
+                    <div class="gallery-overlay">
+                        <h4>Tech Conference 2024</h4>
+                        <p>Networking with industry professionals in Accra</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511895426328-dc8714eba2d9?w=400&h=400&fit=crop" alt="Family">
+                    <div class="gallery-overlay">
+                        <h4>Family Gathering</h4>
+                        <p>Quality time with loved ones during semester break</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&h=400&fit=crop" alt="Friends">
+                    <div class="gallery-overlay">
+                        <h4>University Friends</h4>
+                        <p>Study group sessions with best friends</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=400&fit=crop" alt="Sports">
+                    <div class="gallery-overlay">
+                        <h4>University Sports Day</h4>
+                        <p>Participating in inter-department football match</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=400&fit=crop" alt="Achievement">
+                    <div class="gallery-overlay">
+                        <h4>Academic Excellence Award</h4>
+                        <p>Receiving recognition for outstanding academic performance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section id="documents" class="documents-section">
+        <div class="container">
+            <h2 class="section-title">Documents & Certifications</h2>
+            <div class="documents-grid">
+                <div class="document-item">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=500&fit=crop" alt="Academic Transcript">
+                    <h4>Academic Transcript</h4>
+                    <p>Official university transcript showing academic performance</p>
+                    <a href="documents/transcript.pdf" download class="download-btn">Download PDF</a>
+                </div>
+                <div class="document-item">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=500&fit=crop" alt="IT Certification">
+                    <h4>CompTIA IT Fundamentals</h4>
+                    <p>Industry-recognized IT certification demonstrating technical competency</p>
+                    <a href="documents/comptia_cert.pdf" download class="download-btn">Download PDF</a>
+                </div>
+                <div class="document-item">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=500&fit=crop" alt="Programming Certificate">
+                    <h4>Python Programming Certificate</h4>
+                    <p>Advanced Python programming certification from online course</p>
+                    <a href="documents/python_cert.pdf" download class="download-btn">Download PDF</a>
+                </div>
+                <div class="document-item">
+                    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=500&fit=crop" alt="Internship Certificate">
+                    <h4>Internship Completion Certificate</h4>
+                    <p>Certificate of successful completion of summer internship program</p>
+                    <a href="documents/internship_cert.pdf" download class="download-btn">Download PDF</a>
+                </div>
+                <div class="document-item">
+                    <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=500&fit=crop" alt="Resume">
+                    <h4>Professional Resume</h4>
+                    <p>Updated resume highlighting skills, experience, and achievements</p>
+                    <a href="documents/resume.pdf" download class="download-btn">Download PDF</a>
+                </div>
+                <div class="document-item">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=500&fit=crop" alt="Portfolio">
+                    <h4>Project Portfolio</h4>
+                    <p>Comprehensive portfolio showcasing completed projects and skills</p>
+                    <a href="documents/portfolio.pdf" download class="download-btn">Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>I'm always open to discussing new opportunities, collaborations, or just having a conversation about technology and innovation.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="icon">📧</span>
+                            <span>your.email@student.ttu.edu.gh</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📱</span>
+                            <span>+233 XX XXX XXXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📍</span>
+                            <span>Takoradi, Western Region, Ghana</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <button type="reset" class="reset-btn">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>YN</h3> <!-- Replace with your initials -->
+                    <p>Aspiring Software Engineer | TTU Computer Science Student</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links-footer">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Name. All rights reserved. | TTU BIT 414 Mini Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Image Slider Functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const navBtns = document.querySelectorAll('.nav-btn');
+
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            navBtns[currentSlide].classList.remove('active');
+            
+            currentSlide = index;
+            
+            slides[currentSlide].classList.add('active');
+            navBtns[currentSlide].classList.add('active');
+        }
+
+        // Auto-play slider
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }, 5000);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission handling
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

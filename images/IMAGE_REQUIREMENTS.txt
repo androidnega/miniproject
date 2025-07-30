@@ -1,0 +1,74 @@
+TTU MINI PROJECT - IMAGE REQUIREMENTS
+=====================================
+
+IMPORTANT: Replace all placeholder images with your actual photos!
+
+REQUIRED IMAGES FOR YOUR WEBSITE:
+---------------------------------
+
+SLIDER IMAGES (3 required):
+- slider1.jpg - You engaging in academic activities at TTU
+- slider2.jpg - You participating in community service
+- slider3.jpg - You working on school projects or in labs
+
+COURSE IMAGES (3 required):
+- programming.jpg - Image representing programming/coding
+- database.jpg - Image representing database management
+- networking.jpg - Image representing computer networks
+
+TESTIMONIAL PHOTOS (3 required):
+- lecturer1.jpg - Photo of a lecturer who can give you a testimonial
+- supervisor1.jpg - Photo of internship/work supervisor
+- peer1.jpg - Photo of a classmate or colleague
+
+REFERENCE PHOTOS (3 required):
+- ref1.jpg - Photo of your first referee (Head of Department, etc.)
+- ref2.jpg - Photo of your second referee (Supervisor, etc.)
+- ref3.jpg - Photo of your third referee (Lecturer, etc.)
+
+GALLERY IMAGES (10 required):
+- gallery1.jpg - Graduation or academic ceremony
+- gallery2.jpg - Project presentation or academic work
+- gallery3.jpg - Team building with classmates
+- gallery4.jpg - Internship or work experience
+- gallery5.jpg - Community service activities
+- gallery6.jpg - Conference or seminar attendance
+- gallery7.jpg - Family gathering or personal moments
+- gallery8.jpg - Friends and social activities
+- gallery9.jpg - Sports or recreational activities
+- gallery10.jpg - Achievement or award ceremony
+
+CERTIFICATE IMAGES (6 required):
+- certificate1.jpg - Academic transcript or certificate
+- certificate2.jpg - IT certification (CompTIA, etc.)
+- certificate3.jpg - Programming certificate
+- certificate4.jpg - Internship completion certificate
+- resume.jpg - Screenshot or scan of your resume
+- portfolio.jpg - Screenshot of your project portfolio
+
+IMAGE SPECIFICATIONS:
+--------------------
+- Format: JPG or PNG
+- Quality: High resolution, clear and professional
+- Slider: 800x400px minimum (landscape)
+- Profile photos: 300x300px minimum (square)
+- Gallery: 400x400px minimum (square)
+- Certificates: 600x800px minimum (portrait)
+
+TIPS FOR GOOD IMAGES:
+--------------------
+1. Use well-lit, clear photos
+2. Ensure faces are visible in personal photos
+3. Use professional-looking images for academic content
+4. Avoid blurry or low-quality images
+5. Make sure images are appropriate for academic submission
+
+WHERE TO FIND IMAGES:
+--------------------
+- Personal photos: Your phone, camera, social media
+- Academic images: University events, class activities
+- Stock images: For course illustrations (ensure they're free to use)
+- Certificates: Scan or photograph your actual documents
+- Professional photos: Consider taking new photos if needed
+
+NOTE: All images will be displayed on your website, so ensure they represent you professionally for your internship application!

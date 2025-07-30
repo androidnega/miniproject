@@ -1,0 +1,80 @@
+TTU MINI PROJECT - DOCUMENT REQUIREMENTS
+=========================================
+
+IMPORTANT: Add your actual documents for download functionality!
+
+REQUIRED DOCUMENTS FOR YOUR WEBSITE:
+------------------------------------
+
+1. transcript.pdf
+   - Your official academic transcript from TTU
+   - Shows your courses and grades
+   - Must be in PDF format
+
+2. comptia_cert.pdf (if applicable)
+   - Any IT certifications you have earned
+   - CompTIA, Cisco, Microsoft, etc.
+   - If you don't have any, create a "Skills Certificate" document
+
+3. python_cert.pdf
+   - Programming language certificates
+   - Online course completions (Coursera, Udemy, etc.)
+   - Coding bootcamp certificates
+
+4. internship_cert.pdf
+   - Certificate from previous internships
+   - Letter of recommendation from supervisors
+   - Work experience verification
+
+5. resume.pdf
+   - Your current, updated resume
+   - Include contact information, education, experience
+   - Professional formatting
+
+6. portfolio.pdf
+   - Document showcasing your projects
+   - Include screenshots of websites/applications you've built
+   - Describe technologies used and your role
+
+DOCUMENT SPECIFICATIONS:
+-----------------------
+- Format: PDF only
+- Size: Maximum 5MB per file
+- Quality: High resolution, readable text
+- Professional presentation
+- No password protection
+
+TIPS FOR GOOD DOCUMENTS:
+-----------------------
+1. Use clear, professional fonts
+2. Ensure all text is readable
+3. Include your name and contact information
+4. Use consistent formatting
+5. Proofread for spelling and grammar
+
+CREATING MISSING DOCUMENTS:
+--------------------------
+If you don't have some certificates:
+- Create a "Skills Summary" document
+- List your programming languages and tools
+- Include any online course completions
+- Add academic projects and achievements
+
+DOCUMENT CONTENT GUIDELINES:
+---------------------------
+Resume should include:
+- Personal information and contact details
+- Educational background
+- Work experience (including internships)
+- Technical skills
+- Projects and achievements
+- References
+
+Portfolio should include:
+- 3-5 of your best projects
+- Screenshots or descriptions
+- Technologies used
+- Your role and contributions
+- Links to live projects (if applicable)
+
+NOTE: These documents will be downloadable from your website and should be suitable for presenting to potential employers or the Google internship program!
