@@ -209,30 +209,12 @@ body {
     padding: var(--space-sm) var(--space-lg);
     border-radius: var(--radius-md);
     font-size: var(--font-size-sm);
-    position: relative;
-    overflow: hidden;
-}
-
-.nav-link::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
-    transition: left var(--transition-normal);
-    z-index: -1;
-}
-
-.nav-link:hover::before {
-    left: 0;
 }
 
 .nav-link:hover {
+    background: var(--primary-color);
     color: var(--background-white);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 .social-links {
@@ -252,33 +234,12 @@ body {
     justify-content: center;
     width: 40px;
     height: 40px;
-    position: relative;
-    overflow: hidden;
-}
-
-.social-link::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    background: var(--primary-color);
-    border-radius: 50%;
-    transition: all var(--transition-normal);
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-.social-link:hover::before {
-    width: 100%;
-    height: 100%;
 }
 
 .social-link:hover {
-    color: var(--background-white);
-    transform: translateY(-2px) scale(1.1);
-    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+    color: var(--primary-color);
+    background: var(--background-light);
+    transform: scale(1.1);
 }
 
 /* Section Titles */
@@ -680,17 +641,7 @@ body {
     gap: var(--space-lg);
 }
 
-@media (max-width: 768px) {
-    .courses-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
-@media (max-width: 480px) {
-    .courses-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 .course-card {
     background: var(--background-white);
@@ -755,11 +706,7 @@ body {
     gap: var(--space-lg);
 }
 
-@media (max-width: 768px) {
-    .calendar-grid {
-        grid-template-columns: 1fr;
-    }
-}
+
 
 .calendar-item {
     display: flex;
@@ -817,17 +764,7 @@ body {
     gap: var(--space-lg);
 }
 
-@media (max-width: 768px) {
-    .testimonials-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
-@media (max-width: 480px) {
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 .testimonial-card {
     background: var(--background-white);
@@ -1794,34 +1731,19 @@ body {
         gap: 16px;
     }
     
-    .references-grid {
+    .testimonials-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: var(--space-lg);
     }
     
-    @media (max-width: 500px) {
-        .courses-grid {
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-    }
-    
-    .references-grid {
+    .calendar-grid {
         grid-template-columns: 1fr;
         gap: var(--space-lg);
     }
     
-    .references-section .container {
-        padding: 0 var(--space-lg);
-    }
-    
-    .reference-card {
-        padding: var(--space-lg);
-    }
-    
-    .reference-card img {
-        width: 70px;
-        height: 70px;
+    .references-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-lg);
     }
     
     .documents-grid {
@@ -1960,6 +1882,23 @@ body {
     
     .calendar-preview {
         padding: 0 20px;
+    }
+    
+    /* Mobile Single Column Layouts */
+    .courses-grid,
+    .testimonials-grid,
+    .references-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+    
+    .reference-card {
+        padding: var(--space-md);
+    }
+    
+    .reference-card img {
+        width: 60px;
+        height: 60px;
     }
 }
 
