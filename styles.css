@@ -495,12 +495,16 @@ body {
 .current-courses {
     padding: 4rem 0;
     background: #f8fafc;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .current-courses .container {
+    width: 100%;
     max-width: 1600px;
     margin: 0 auto;
     padding: 0 2rem;
+    box-sizing: border-box;
 }
 
 .current-courses .section-title {
@@ -513,6 +517,8 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .course-item {
@@ -526,6 +532,9 @@ body {
     align-items: center;
     gap: 1rem;
     height: 120px;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
 }
 
 .course-item:hover {
@@ -1726,12 +1735,12 @@ body {
     }
     
     .container {
-        padding: 0 25px;
+        padding: 0 1.5rem;
     }
     
-    .current-courses,
-    .testimonials {
-        padding: 0 25px;
+    .current-courses .container,
+    .testimonials .container {
+        padding: 0 1.5rem;
     }
     
     .calendar-preview {
@@ -1741,7 +1750,17 @@ body {
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 20px;
+        padding: 0 1rem;
+    }
+    
+    .current-courses {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .current-courses .container {
+        padding: 0 1rem;
+        width: 100%;
     }
     
     .about-excerpt .section-main-title {
