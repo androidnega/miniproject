@@ -524,12 +524,13 @@ body {
 .about-excerpt {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 100%;
     word-wrap: break-word;
     overflow-wrap: break-word;
     min-height: 0;
     overflow: hidden;
+    position: relative;
 }
 
 .profile-info {
@@ -538,7 +539,7 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .profile-text {
@@ -596,7 +597,10 @@ body {
     width: auto;
     min-width: 180px;
     flex-shrink: 0;
-    margin-top: var(--space-md);
+    margin-top: auto;
+    margin-bottom: var(--space-md);
+    position: relative;
+    z-index: 1;
 }
 
 .read-more-btn:hover {
