@@ -2010,7 +2010,10 @@ body {
         gap: 0;
     }
     
-    .hero-left,
+    .hero-left {
+        padding: 0;
+    }
+    
     .hero-right {
         padding: 30px 20px;
     }
