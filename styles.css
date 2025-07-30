@@ -1173,92 +1173,147 @@ body {
 
 /* References Section */
 .references-section {
-    padding: var(--space-3xl) 0;
-    background: var(--background-light);
+    padding: var(--space-4xl) 0;
+    background: var(--section-bg-2);
+    position: relative;
+}
+
+.references-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
 }
 
 .references-section .container {
     max-width: var(--container-max-width);
     margin: 0 auto;
     padding: 0 var(--container-padding);
+    position: relative;
+    z-index: 1;
 }
 
 .references-section .section-title {
     color: var(--text-dark);
     text-align: center;
-    margin-bottom: var(--space-2xl);
+    margin-bottom: var(--space-3xl);
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
 }
 
 .references-section .section-title::after {
     background: var(--primary-color);
     left: 50%;
     transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
 }
 
 .references-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--space-lg);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-lg);
 }
 
 .reference-card {
-    background: white;
-    padding: var(--space-lg);
-    border-radius: var(--radius-lg);
-    text-align: left;
+    background: var(--background-white);
+    padding: var(--space-xl);
+    border-radius: var(--radius-xl);
     color: var(--text-dark);
-    border: 1px solid var(--border-color);
-    transition: all var(--transition-normal);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-light);
+    transition: all var(--transition-smooth);
     display: flex;
-    align-items: flex-start;
-    gap: var(--space-md);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.reference-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
 }
 
 .reference-card:hover {
-    border-color: var(--primary-color);
-    transform: translateY(-2px);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-light);
 }
 
 .reference-card img {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid var(--primary-color);
-    flex-shrink: 0;
+    border: 3px solid var(--primary-color);
+    margin-bottom: var(--space-md);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .reference-card .reference-content {
-    flex-grow: 1;
-    min-width: 0;
+    width: 100%;
 }
 
 .reference-card h3 {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
     color: var(--text-dark);
     margin-bottom: var(--space-xs);
     line-height: 1.3;
+    font-weight: 600;
 }
 
 .reference-card .position {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
     font-weight: 600;
     color: var(--primary-color);
     margin-bottom: var(--space-xs);
     line-height: 1.4;
+    padding: var(--space-xs) var(--space-sm);
+    background: var(--primary-light);
+    border-radius: var(--radius-md);
+    display: inline-block;
 }
 
 .reference-card .organization {
     font-size: var(--font-size-sm);
     color: var(--text-medium);
-    margin-bottom: 0;
+    margin-bottom: var(--space-md);
     line-height: 1.4;
+    font-weight: 500;
 }
 
-.contact-info p {
-    margin-bottom: 0.75rem;
-    color: #555;
-    font-size: 0.95rem;
+.reference-card .contact-info {
+    margin-top: auto;
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--border-light);
+    width: 100%;
+}
+
+.reference-card .contact-info p {
+    margin-bottom: var(--space-xs);
+    color: var(--text-medium);
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+}
+
+.reference-card .contact-info p:last-child {
+    margin-bottom: 0;
 }
 
 /* Gallery Section */
@@ -1661,6 +1716,11 @@ body {
         gap: 16px;
     }
     
+    .references-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-lg);
+    }
+    
     @media (max-width: 500px) {
         .courses-grid {
             grid-template-columns: 1fr;
@@ -1668,7 +1728,24 @@ body {
         }
     }
     
-    .references-grid,
+    .references-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .references-section .container {
+        padding: 0 var(--space-lg);
+    }
+    
+    .reference-card {
+        padding: var(--space-lg);
+    }
+    
+    .reference-card img {
+        width: 70px;
+        height: 70px;
+    }
+    
     .gallery-grid,
     .documents-grid {
         grid-template-columns: 1fr;
