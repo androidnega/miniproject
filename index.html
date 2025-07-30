@@ -654,7 +654,7 @@
         const slides = document.querySelectorAll('.slide');
 
         function showSlide(index) {
-            slides[currentSlide].classList.remove('active');
+            slides.forEach(slide => slide.classList.remove('active'));
             currentSlide = index;
             slides[currentSlide].classList.add('active');
         }
@@ -663,7 +663,7 @@
         let autoPlayInterval = setInterval(() => {
             currentSlide = (currentSlide + 1) % slides.length;
             showSlide(currentSlide);
-        }, 5000);
+        }, 4000);
 
         // Touch/Swipe functionality for mobile
         const slider = document.querySelector('.slider');
@@ -721,7 +721,7 @@
             autoPlayInterval = setInterval(() => {
                 currentSlide = (currentSlide + 1) % slides.length;
                 showSlide(currentSlide);
-            }, 5000);
+            }, 4000);
         });
 
         // Mobile menu functionality
